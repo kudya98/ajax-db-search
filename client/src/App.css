@@ -1,0 +1,21 @@
+.users{
+
+}
+.user{
+border:1px solid black;
+}
+.btn.active,.btn.active:hover,.btn.active:active,.btn.active:focus,btn.active:visited{
+    outline: none !important;
+    box-shadow: none !important;
+    border-style: outset !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
